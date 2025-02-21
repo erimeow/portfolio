@@ -1,0 +1,98 @@
+/* General styles */
+body {
+    background-color: #121212; /* Dark background */
+    color: #ffffff; /* Light text */
+    font-family: cursive;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styling */
+header {
+    background-color: #1f1f1f;
+    padding: 20px;
+	font-family: Georgia, serif;
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+/* Navigation buttons */
+nav {
+    margin-top: 10px;
+}
+
+button {
+    background-color: #A9A9A9; /* Dark background */
+    color: white; /* White text */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #696969; /* Slightly lighter on hover */
+    transform: scale(1.05); /* Slight bounce effect */
+}
+
+button:active {
+    transform: scale(0.95); /* Press effect */
+}
+
+/* Sections */
+.content {
+    display: none;
+    padding: 20px;
+}
+
+.content.active {
+    display: block;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Popup Resume */
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    display: none;
+}
+
+.popup img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.popup .close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+}
+
+.popup .close:hover {
+    color: red;
+}

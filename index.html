@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1 style="font-size: 24px;">My Portfolio</h1>
+        <nav>
+            <button onclick="showSection('home')">Home</button>
+            <button onclick="showSection('about')">About Me</button>
+            <button onclick="showSection('photos')">Photos</button>
+            <button onclick="showSection('contact')">Contact</button>
+        </nav>
+    </header>
+
+    <section id="home" class="content active">
+        <h2 style="font-size: 60px;">Welcome</h2>
+		<h1 style="font-size: 40px;">Renier Labonite</h1>
+        <img src="bg.jpg" alt="My Picture" class="big-pic" style="max-width: 700px; height: auto; border-radius: 10px;">
+    </section>
+
+    <section id="about" class="content">
+        <h2 style="font-size: 40px;">About Me</h2>
+		<p style="font-size: 16px; margin-top: 20px;">I am eager to continue developing my skills and expanding my knowledge.</p>
+		<p style="font-sizw: 16px margin-top: 20px;">My goal is to take on new challenges, contribute effectively, and make a positive impact in any environment I am part of.</p>
+        <button onclick="showResumePopup()">View Resume</button>
+        <h3 style="font-size: 40px;">Expertise</h3>
+        <ul>
+            <li>Multitasking</li>
+            <li>Time Management</li>
+			<li>Computer Literate</li>
+        
+    </section>
+
+    <section id="photos" class="content">
+        <h2 style="font-size: 40px;">My Photos</h2>
+        <img src="PIC1.jpg" alt="Photo 1" style="max-width: 540px; height: auto; border-radius: 10px;">
+        <img src="PIC2.jpg" alt="Photo 2" style="max-width: 305px; height: auto; border-radius: 10px;">
+    </section>
+
+    <section id="contact" class="content">
+        <h2 style="font-size: 40px;">Contact</h2>
+        <p>Email: rclabonite@paterostechnologicalcollege.edu.ph
+</p>
+    </section>
+
+    <div id="resumePopup" class="popup" style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(0, 0, 0, 0.9); padding: 20px; border-radius: 10px; width: 80%; max-width: 600px; text-align: center; display: none;">
+        <span class="close" onclick="closeResumePopup()">&times;</span>
+        <img src="resume.jpg" alt="My Resume" class="resume-img" style="max-width: 80%; height: auto; border-radius: 10px;">
+    </div>
+</body>
+</html>
